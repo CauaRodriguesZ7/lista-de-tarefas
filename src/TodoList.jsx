@@ -7,16 +7,18 @@ function TodoList() {
             <h1>Lista de Tarefas</h1>
             <form>
                 <input type="text" placeholder="Adicione uma Tarefa" />
-                <button type="submit">Add</button>
+                <button className="add" type="submit">Add</button>
             </form>
-            <div className="LlistaTarefas">
-                <div className="Item"></div>
-                <span>Taefa de exemplo</span>
-                <button>Deletar</button>
-            </div>
-            <div className="item completo">
-                <span>Tarefa de Exemplo</span>
-                <button>Deletar</button>
+            <div className="listaTarefas">
+                <div className="item">
+                    <span>Tarefa de Exemplo</span>
+                    <button className="del">Deletar</button>
+                </div>
+                <div className="item completo">
+                    <span>Tarefa de Exemplo</span>
+                    <button className="del">Deletar</button>
+                </div>
+                <button className="deleteAll">Deletar Todas</button>
             </div>
         </div>
     )
